@@ -1,0 +1,7 @@
+CREATE TRIGGER trigger trg_drop
+ON DATABASE
+FOR
+drop_table
+AS
+PRINT 'You can not drop this table!'
+ROLLBACK;
